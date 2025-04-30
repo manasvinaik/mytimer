@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mybackground">
+        <div id="header">
+            <span>my timer ❤︎</span>
+            <div id="header-buttons">
+                <button id="audio-toggle">
+                    <img src="assets/audio.png" alt="Audio" width="20" height="20">
+                </button>
+                <button id="minimize">
+                    <img src="assets/minimize.png" alt="Minimize" width="40" height="40">
+                </button>
+                <button id="close">
+                    <img src="assets/close.png" alt="Close" width="40" height="40">
+                </button>
+            </div>
+        </div>
+
+        <div id="main">
+            <p id="message">let's be productive!</p>
+            <button id="start">start</button>
+        
+            <div id="counter">
+                <img id="gif" src="" alt="aithere's gif dance sequence">
+                <div id="timer-container" class="hidden">
+                    <div class="timer-controls">
+                        <button id="minus">
+                            <img src="assets/subtract.png" alt="minus" width="40" height="40">
+                        </button>
+                        <p id="countdown">10:00</p>
+                        <button id="plus">
+                            <img src="assets/add.png" alt="add" width="40" height="40">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

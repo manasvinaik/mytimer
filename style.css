@@ -1,0 +1,143 @@
+:root {
+    --bg-main: #FF8BA0;
+    --bg-content: #FFB6B3;
+    --text-dark: #86003C;
+}
+
+@font-face {
+    font-family: "Retro";
+    src: url("assets/Retro.ttf") format("truetype");
+}
+
+body {
+    font-family: "Retro";
+    background-color: transparent;
+    overflow: hidden;
+    color: var(--text-dark);
+    text-align: center;
+    border-radius: 5px;
+    user-select: none;
+}
+
+#mybackground{
+    background-color: #FF8BA0;
+    height: 450px;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: var(--bg-main);
+    -webkit-app-region: drag; 
+}
+#header-buttons {
+    display: flex;
+    gap: 0px;
+    -webkit-app-region: no-drag;
+}
+
+#audio-toggle{
+    margin-right: 5px;
+}
+
+#header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main {
+    border: 2px solid #86003C;
+    background-image: url("assets/pinkbg.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 10px;
+    padding: 0px;
+    font-size: 30px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+
+#start {
+    font-family: "Retro";
+    background-color: var(--text-dark);
+    color: white;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start:hover {
+    background-color: #5a002b;
+}
+
+.hidden {
+    display: none;
+}
+
+#counter {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#gif {
+    margin-top: 20px;
+    width: 150px;  
+    height: 150px;
+    object-fit: cover;
+    padding-bottom: 0px;
+    transform: translateX(70%);
+}
+
+#timer-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -20px;
+}
+
+.timer-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#countdown {
+    font-size: 60px;
+}
+
+#timer-start {
+    background-color: var(--text-dark);
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+#minus, #plus{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
